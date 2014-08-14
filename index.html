@@ -78,7 +78,8 @@ p.video {text-align:center; margin-top:100px;}
   </section>
 </div><script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 <script type="text/javascript">
-jQuery(document.body).click(function() {
+jQuery(document.body).click(function(e) {
+  e.preventDefault();
   jQuery(".main").delay(100).animate({opacity: 1}, 500);
   jQuery(".about,.team,.donate,.fb,.tw,.ig,.yt").delay(100).animate({opacity: 0.8}, 500);
 });
