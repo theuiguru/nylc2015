@@ -22,7 +22,7 @@ a {color:#fff; text-decoration:none;}
 section {margin:7em auto; max-width:600px;}
 footer {position:absolute; bottom:0; font-family:Roadway; font-size:14px; color:#999; padding:10px; text-transform:uppercase;}
 .home {position:relative; overflow:auto; display:none; height:100%; width:100%; padding:10px; border-radius:10px;}
-.about, .media, .team, .donate, .fb, .tw, .ig, .yt {position:relative; overflow:auto; display:none; height:100%; width:100%; padding:10px;background:#333; opacity:0; text-align:justify; border-radius:10px;}
+.about, .team, .faq, .social {position:relative; overflow:auto; display:none; height:100%; width:100%; padding:10px;background:#333; opacity:0; text-align:justify; border-radius:10px;}
 img.nylc {border-radius:100%; max-width:100%;}
 .countdown {color:#ff9900;}
 ul {margin-top:32px; position:fixed; top:30%; right:0; float:right;}
@@ -40,9 +40,8 @@ p.video {text-align:center; margin-top:100px;}
     <li><a href="#"><span></span></a></li>
     <li><a href="#"><span></span></a></li>
 </ul>
-  <section>
-    <div class="home"></div>
-    <div class="about"><h2>What is <i>LC</i>?</h2><p>Every year, the Mar Gregorios Orthodox Christian Student Movement (MGOCSM) of North America hosts Leadership Camp through the blessings of our Metropolitans and by the Grace of God. Leadership Camp gives our youth the opportunity to not only meet others across North America who will help them in their spiritual journey, but also the opportunity to become and grow as the leaders and future of the Orthodox Church.</p>
+  <section><div class="home"></div></section>
+  <section></section><div class="about"><h2>What is <i>LC</i>?</h2><p>Every year, the Mar Gregorios Orthodox Christian Student Movement (MGOCSM) of North America hosts Leadership Camp through the blessings of our Metropolitans and by the Grace of God. Leadership Camp gives our youth the opportunity to not only meet others across North America who will help them in their spiritual journey, but also the opportunity to become and grow as the leaders and future of the Orthodox Church.</p>
 <p>Leadership Camp brings together representatives from MGOCSM units all across North America, from California to Virginia, and Canada to Texas. It trains them in a four-day period to create a new generation of leaders within the Malankara Orthodox Community.</p>
 <p>Participants are selected by their parishes because they are individuals who actively inspire the Faith through worshipping our Lord, studying His Word, and serving His calling. These representatives will attend Leadership Camp on behalf of their MGOCSMs and by the end, we hope they learn to inspire and lead the youth of their churches and areas to the Church and grow in our Faith.</p>
 <p align="center">---</p>
@@ -69,29 +68,21 @@ p.video {text-align:center; margin-top:100px;}
                             <p>REGISTRATION<br/>Deena Zacharia<br/>Ronny Antony<br/>Jainy Mathew<br/>Ansue Koshy</p>
                         </td>
                     </tr></tbody></table>
-    </div>
-    <div class="donate"><h2>Donate to <i>NYLC2015</i></h2><p><img src="http://taskforcehaiyan.org/wp-content/uploads/2013/11/donate-button-1.png"></p></div>
-    <div class="fb"><h2>Facebook</h2><p>Facebook feed coming soon...</p></div>
-    <div class="tw"><h2>Twitter</h2><p>Twitter feed coming soon...</p></div>
-    <div class="ig"><h2>Instagram</h2><p>Instagram feed coming soon...</p></div>
-    <div class="yt"><h2>YouTube</h2><p>Youtube feed coming soon...</p></div>
-  </section>
+    </div></section>
+    <section><div class="social"></div></section>
 </div><script src="http://code.jquery.com/jquery-1.10.2.js"></script>
 <script type="text/javascript">
 jQuery(document.body).click(function(e) {
   e.preventDefault();
   jQuery(".main").delay(100).animate({opacity: 1}, 500);
-  jQuery(".about,.team,.donate,.fb,.tw,.ig,.yt").delay(100).animate({opacity: 0.8}, 500);
+  jQuery(".about,.team,.faq,.social").delay(100).animate({opacity: 0.8}, 500);
 });
 function show_div(div_id) {
   document.querySelector('.home').style.display = 'none';
   document.querySelector('.about').style.display = 'none';
   document.querySelector('.team').style.display = 'none';
-  document.querySelector('.donate').style.display = 'none';
-  document.querySelector('.fb').style.display = 'none';
-  document.querySelector('.tw').style.display = 'none';
-  document.querySelector('.ig').style.display = 'none';
-  document.querySelector('.yt').style.display = 'none';
+  document.querySelector('.faq').style.display = 'none';
+  document.querySelector('.social').style.display = 'none';
   document.querySelector(div_id).style.display = 'block';
 }
 function countdown() {
