@@ -21,6 +21,16 @@
   .countdown {color:#ff6666;}
   .about {position:relative; overflow:auto; display:none; height:100%; width:100%; background:#222; opacity:0; text-align:justify; border-radius:5px; padding:10px;}
   .team, .donate, .media {position:relative; overflow:auto; display:none; height:100%; width:100%; background:#222; opacity:0; text-align:center; border-radius:5px; padding:10px;}
+  .masthead-nav {position:fixed; right:5px;}
+  .masthead-nav > li {display:inline;}
+  .masthead-nav > li > a::before {content:"\203A";}
+  .masthead-nav > li > a:hover {content:""; color:#ffcc00; border-bottom:none;}
+  .masthead-nav > li > .a::before {content:"A"; background:#000099; border-radius:100%; padding:10px;}
+  .masthead-nav > li > .t::before {content:"T"; background:#ff2222; border-radius:100%; padding:10px;}
+  .masthead-nav > li > .d::before {content:"D"; background:#ff9900; border-radius:100%; padding:10px;}
+  .masthead-nav > li > .m::before {content:"M"; background:#ffcc00; border-radius:100%; padding:10px;}
+  .masthead-nav > li > a:hover::before {content:url(https://raw.githubusercontent.com/danleech/simple-icons/master/icons/aim/aim-24.png); background:none;}
+  .masthead-nav > li > a:hover::after {content:attr(title);}
 </style></head><body>
   <div class="site-wrapper">
     <div class="site-wrapper-inner">
@@ -28,10 +38,10 @@
           <div class="masthead clearfix">
             <div class="inner">
               <ul class="nav masthead-nav">
-                <li><a href="#" onClick="show_div('.about'); return false;">What is LC?</a></li>
-                <li><a href="#" onClick="show_div('.team'); return false;">The Team</a></li>
-                <li><a href="#" onClick="show_div('.donate'); return false;">Donate</a></li>
-                <li><a href="#" onClick="show_div('.media'); return false;">Media</a></li>
+                <li><a href="#" onClick="show_div('.about'); return false;" title="What is LC?" class="a"></a></li>
+                <li><a href="#" onClick="show_div('.team'); return false;" title="The Team" class="t"></a></li>
+                <li><a href="#" onClick="show_div('.donate'); return false;" title="Donate" class="d"></a></li>
+                <li><a href="#" onClick="show_div('.media'); return false;" title="Media" class="m"></a></li>
               </ul>
             </div>
           </div>
@@ -73,7 +83,7 @@
             <div class="inner">
               <div class="countdown"></div>Made with <a href="#">&#x2665;</a> in NY. | Powered by <a href="http://mgocsmamerica.com">MGOCSMAmerica</a>.</p>
             </div>
-            <p class="rf"><a href="http://mgocsmamerica.com"><img src="http://mgocsmamerica.com/images/logos/mgocsm.small.png" width="50" alt=""/></a><br/>NYLC2015</p>
+            <p class="rf"><a href="http://mgocsmamerica.com"><img src="http://mgocsmamerica.com/images/logos/mgocsm.small.png" width="50" alt=""/></a></p>
           </div>
 
         </div>
