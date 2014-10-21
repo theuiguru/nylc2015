@@ -32,6 +32,12 @@ a {color:#ff6666;} a:hover {color:#ff6666; text-decoration:none; font-size:20px;
 .masthead-nav > li > a:hover::after {content:attr(title);}
 /* Smartphones (portrait) */ @media only screen and (max-width : 768px) {
   .masthead-nav > li {display:inline-block !important;}
+  .masthead-nav > li > .a::before {background:none; content:"About";}
+  .masthead-nav > li > .t::before {background:none; content:"The Team";}
+  .masthead-nav > li > .d::before {background:none; content:"Donate";}
+  .masthead-nav > li > .m::before {background:none; content:"Media";}
+  .masthead-nav > li > a:hover,  .masthead-nav > li > a:hover::before {content:none; border-bottom:1px dashed;}
+  .cover, .mastfoot {display:none;}
 }
 </style></head><body>
   <div class="site-wrapper">
