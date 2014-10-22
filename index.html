@@ -15,7 +15,7 @@
 <![endif]-->
 <style type="text/css">
 html, body {background: url(http://theuiguru.github.io/nylc2015/assets/subway_nylc.jpg) no-repeat center fixed; background-size: cover;}
-a {color:#ff6666;} a:hover {color:#ff6666; text-decoration:none; font-size:20px;}
+a {color:#ff6666;} a:hover {color:#ff6666; text-decoration:none;}
 .site-wrapper {background:rgba(0,0,0,.3);}
 .rf {position:fixed; bottom:5px; right:5px; font-family:'Just Me Again Down Here', sans-serif; font-size:30px; color:#ff6666;}
 .countdown {color:#ff6666;}
@@ -23,12 +23,16 @@ a {color:#ff6666;} a:hover {color:#ff6666; text-decoration:none; font-size:20px;
 .team, .donate, .media {position:relative; overflow:auto; display:none; height:100%; width:100%; background:#222; opacity:0; text-align:center; border-radius:5px; padding:10px;}
 .masthead-nav {position:fixed; right:5px; font-family:"Subway Ticker Grid", sans-serif;}
 .masthead-nav > li {display:inline; float:right; clear:both;}
-.masthead-nav > li > a:hover {content:""; color:#ffcc00; border-bottom:none;}
 .masthead-nav > li > .n::before {content:"N"; background:#000099; border-radius:50%; padding:10px;}
 .masthead-nav > li > .y::before {content:"Y"; background:#ff2222; border-radius:50%; padding:10px;}
 .masthead-nav > li > .l::before {content:"L"; background:#ff9900; border-radius:50%; padding:10px;}
 .masthead-nav > li > .c::before {content:"C"; background:#ffcc00; border-radius:50%; padding:10px;}
+.masthead-nav > li > a:hover {content:""; border-bottom:none;}
 .masthead-nav > li > a:hover::before {content:url(https://raw.githubusercontent.com/danleech/simple-icons/master/icons/aim/aim-24.png); background:none;}
+.masthead-nav > li > .n:hover {color:#0000ff;}
+  .masthead-nav > li > .y:hover {color:#ff2222;}
+  .masthead-nav > li > .l:hover {color:#ff9900;}
+  .masthead-nav > li > .c:hover {color:#ffcc00;}
 .masthead-nav > li > a:hover::after {content:attr(title);}
 /* Smartphones (portrait) */ @media only screen and (max-width : 768px) {
   .masthead-nav > li {display:inline-block !important;}
@@ -40,6 +44,13 @@ a {color:#ff6666;} a:hover {color:#ff6666; text-decoration:none; font-size:20px;
   .cover, .mastfoot {display:none;}
 }
 </style></head><body>
+<div id="fb-root"></div><script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script><!--END FACEBOOK LIKE CODE-->
   <div class="site-wrapper">
     <div class="site-wrapper-inner">
         <div class="cover-container">
@@ -91,7 +102,11 @@ a {color:#ff6666;} a:hover {color:#ff6666; text-decoration:none; font-size:20px;
             <div class="inner">
               <div class="countdown"></div>Made with <a href="#">&#x2665;</a> in NY. | Powered by <a href="http://mgocsmamerica.com">MGOCSMAmerica</a>.</p>
             </div>
-            <p class="rf"><a href="http://mgocsmamerica.com"><img src="http://mgocsmamerica.com/images/logos/mgocsm.small.png" width="50" alt=""/></a></p>
+            <p class="rf"><a class=”twitter-follow-button” href=”https://twitter.com/nylc2015” data-show-count=”true” data-show-screen-name=”true” data-width="300px" data-align="right">Follow @NYLC2015</a> <script type=”text/javascript”>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+        if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
+        fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+              <br/><div class="fb-like fb_iframe_widget" data-href="https://facebook.com/nylc2015" data-layout="box_count" data-action="like" data-show-faces="true" data-share="false"></div>
+              <br/><a href="http://mgocsmamerica.com"><img src="http://mgocsmamerica.com/images/logos/mgocsm.small.png" width="50" alt=""/></a></p>
           </div>
 
         </div>
