@@ -52,19 +52,7 @@ img.nylc {border-radius:10px; max-width:200px; float:left;}
 .splash {position:fixed; background:url(http://theuiguru.github.io/nylc2015/assets/subway_doors.jpg) no-repeat fixed top center; background-size:cover; width:100%; height:100%; color:#fff; -webkit-animation:bounceInRight 1.5s;}
   .site-wrapper {margin:0; padding:0; width:100%; height:100%; opacity:0; position:absolute; left:0; right:0; color:#fff; background:url(http://theuiguru.github.io/nylc2015/assets/subway_nylc.jpg) no-repeat center fixed; background-size:cover;}
 /* Smartphones (portrait) */ @media only screen and (max-width : 768px) {
-  .masthead-nav > li {display:inline-block !important;}
-  .masthead-nav > li > .n::before {background:none; content:"Home";}
-  .masthead-nav > li > .y::before {background:none; content:"What is LC?";}
-  .masthead-nav > li > .l::before {background:none; content:"The Team";}
-  .masthead-nav > li > .c::before {background:none; content:"Donate";}
-  .masthead-nav > li > .fb::before {background:none; content:"Facebook";}
-  .masthead-nav > li > .tw::before {background:none; content:"Twitter";}
-  .masthead-nav > li > .ig::before {background:none; content:"Instagram";}
-  .masthead-nav > li > .yt::before {background:none; content:"YouTube";}
-  .masthead-nav > li > .n:hover {color:#0000ff;}
-  .masthead-nav > li > .y:hover {color:#ff2222;}
-  .masthead-nav > li > .l:hover {color:#ff9900;}
-  .masthead-nav > li > .c:hover {color:#ffcc00;}
+  .masthead-nav > li > .n, .y, .l, .c {display:none !important;}
   .masthead-nav > li > .fb:hover {color:#3b5998;}
   .masthead-nav > li > .tw:hover {color:#55acee;}
   .masthead-nav > li > .ig:hover {color:#3f729b;}
@@ -72,6 +60,7 @@ img.nylc {border-radius:10px; max-width:200px; float:left;}
   .cover, .mastfoot {display:none;}
   .splash {position:fixed; background:url(http://theuiguru.github.io/nylc2015/assets/subway_doors.jpg) no-repeat fixed top center; background-size:cover; width:100%; height:100%; color:#fff; -webkit-animation:bounceInRight 1.5s;}
   .site-wrapper {margin:0; padding:0; width:100%; height:100%; opacity:0; position:absolute; left:0; right:0; color:#fff; background:url(http://theuiguru.github.io/nylc2015/assets/subway_nylc.jpg) no-repeat center fixed; background-size:cover;}
+}
 </style></head><body>
 <div id="fb-root"></div><script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
