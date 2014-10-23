@@ -53,10 +53,10 @@ img.nylc {border-radius:10px; max-width:200px; float:left;}
   .site-wrapper {margin:0; padding:0; width:100%; height:100%; opacity:0; position:absolute; left:0; right:0; color:#fff; background:url(http://theuiguru.github.io/nylc2015/assets/subway_nylc.jpg) no-repeat center fixed; background-size:cover;}
 /* Smartphones (portrait) */ @media only screen and (max-width : 768px) {
   .masthead-nav > li {display:inline-block !important;}
-  .masthead-nav > li > .n::before {background:none; content:"About";}
-  .masthead-nav > li > .y::before {background:none; content:"The Team";}
-  .masthead-nav > li > .l::before {background:none; content:"Donate";}
-  .masthead-nav > li > .c::before {background:none; content:"Inspire";}
+  .masthead-nav > li > .n::before {background:none; content:"Home";}
+  .masthead-nav > li > .y::before {background:none; content:"What is LC?";}
+  .masthead-nav > li > .l::before {background:none; content:"The Team";}
+  .masthead-nav > li > .c::before {background:none; content:"Donate";}
   .masthead-nav > li > .fb::before {background:none; content:"Facebook";}
   .masthead-nav > li > .tw::before {background:none; content:"Twitter";}
   .masthead-nav > li > .ig::before {background:none; content:"Instagram";}
@@ -87,10 +87,10 @@ img.nylc {border-radius:10px; max-width:200px; float:left;}
           <div class="masthead clearfix">
             <div class="inner">
               <ul class="nav masthead-nav">
-                <li><a href="#" onClick="show_div('.about'); return false;" title="What is LC?" class="n"></a></li>
-                <li><a href="#" onClick="show_div('.team'); return false;" title="The Team" class="y"></a></li>
-                <li><a href="#" onClick="show_div('.donate'); return false;" title="Donate" class="l"></a></li>
-                <li><a href="#" onClick="show_div('.corner'); return false;" title="Reflect" class="c"></a></li>
+                <li><a href="#" onClick="show_div('.home'); return false;" title="Back to Start" class="n"></a></li>
+                <li><a href="#" onClick="show_div('.about'); return false;" title="What is LC?" class="y"></a></li>
+                <li><a href="#" onClick="show_div('.team'); return false;" title="The Team" class="l"></a></li>
+                <li><a href="#" onClick="show_div('.donate'); return false;" title="Donate" class="c"></a></li>
                 <li>&nbsp;</li>
                 <li>&nbsp;</li>
                 <li><a href="http://facebook.com/nylc2015" target="_blank" title="Facebook" class="fb"></a></li>
@@ -123,10 +123,7 @@ img.nylc {border-radius:10px; max-width:200px; float:left;}
     <p><b>Registration</b>:<br/>Ms. Deena Zacharia<br/>Mr. Ronny Antony<br/>Ms. Jainy Mathew<br/>Ms. Ansue Koshy</p>
   </div>
 </div>
-    <div class="donate"><h2>Donate to <i>NYLC2015</i></h2><p>More info coming soon...</p></div>
-    <div class="corner"><h2>NYLC Corner</h2>
-      Reflections will be posted here soon...
-          </div>
+    <div class="donate"><h2>Donate to <i>NYLC2015</i></h2><p><img src="http://www.cscs-ny.org/images/donate-button.jpg" alt=""/></p></div>
         </div><!--inner cover end-->
 
           <div class="mastfoot">
@@ -150,7 +147,6 @@ function show_div(div_id) {
   document.querySelector('.about').style.display = 'none';
   document.querySelector('.team').style.display = 'none';
   document.querySelector('.donate').style.display = 'none';
-  document.querySelector('.corner').style.display = 'none';
   document.querySelector(div_id).style.display = 'block';
 }
 function countdown() {
