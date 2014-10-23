@@ -49,7 +49,7 @@ img.nylc {border-radius:10px; max-width:200px; float:left;}
 .masthead-nav > li > a:hover::before {content:url(https://raw.githubusercontent.com/danleech/simple-icons/master/icons/aim/aim-24.png); background:none;}
 .masthead-nav > li > a:hover::after {content:attr(title);}
 .mastfoot > .inner > a:hover {font-size:20px;}
-.splash {position:fixed; background:url(http://theuiguru.github.io/nylc2015/assets/subway_doors.jpg) no-repeat fixed top center; background-size:cover; width:100%; height:100%; color:#fff; -webkit-animation:bounceInRight 0.8s;}
+.splash {position:fixed; background:url(http://theuiguru.github.io/nylc2015/assets/subway_doors.jpg) no-repeat fixed top center; background-size:cover; width:100%; height:100%; color:#fff; -webkit-animation:bounceInRight 1.5s;}
   .site-wrapper {margin:0; padding:0; width:100%; height:100%; opacity:0; position:absolute; left:0; right:0; color:#fff; background:url(http://theuiguru.github.io/nylc2015/assets/subway_nylc.jpg) no-repeat center fixed; background-size:cover;}
 /* Smartphones (portrait) */ @media only screen and (max-width : 768px) {
   .masthead-nav > li {display:inline-block !important;}
@@ -70,7 +70,7 @@ img.nylc {border-radius:10px; max-width:200px; float:left;}
   .masthead-nav > li > .ig:hover {color:#3f729b;}
   .masthead-nav > li > .yt:hover {color:#e52d27;}
   .cover, .mastfoot {display:none;}
-  .splash {position:fixed; background:url(http://theuiguru.github.io/nylc2015/assets/subway_doors.jpg) no-repeat fixed top center; background-size:cover; width:100%; height:100%; color:#fff; -webkit-animation:bounceInRight 0.8s;}
+  .splash {position:fixed; background:url(http://theuiguru.github.io/nylc2015/assets/subway_doors.jpg) no-repeat fixed top center; background-size:cover; width:100%; height:100%; color:#fff; -webkit-animation:bounceInRight 1.5s;}
   .site-wrapper {margin:0; padding:0; width:100%; height:100%; opacity:0; position:absolute; left:0; right:0; color:#fff; background:url(http://theuiguru.github.io/nylc2015/assets/subway_nylc.jpg) no-repeat center fixed; background-size:cover;}
 </style></head><body>
 <div id="fb-root"></div><script>(function(d, s, id) {
@@ -144,11 +144,7 @@ img.nylc {border-radius:10px; max-width:200px; float:left;}
 <script src="http://getbootstrap.com//dist/js/bootstrap.min.js"></script>
 <script src="http://getbootstrap.com//assets/js/docs.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug --><script src="http://getbootstrap.com//assets/js/ie10-viewport-bug-workaround.js"></script><script type="text/javascript">
-jQuery(".site-wrapper").animate({opacity: 1}, 3000, function(e) {
-  //e.preventDefault();
-  jQuery(".site-wrapper").delay(100).animate({opacity: 1}, 1000);
-  //jQuery(".about,.team,.donate,.media").delay(100).animate({opacity: 0.8}, 500);
-});
+jQuery(".site-wrapper").delay(100).animate({opacity: 1}, 3000);
 function show_div(div_id) {
   document.querySelector('.home').style.display = 'none';
   document.querySelector('.about').style.display = 'none';
