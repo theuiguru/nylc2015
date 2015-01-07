@@ -22,7 +22,7 @@ h2 {font-family:Roadway; font-weight:500; font-size:2em; border-bottom:1px solid
 .reflect > ul > li {list-style:none; font-family:'Subway'; font-size:20px; margin:0 0 20px -50px; text-transform:uppercase;}
 .rf {position:fixed; bottom:5px; right:5px; font-family:'Just Me Again Down Here', sans-serif; font-size:30px; color:#ff6666;}
 .countdown {color:#ff6666; background:rgba(0,0,0,.8); position:fixed; top:0; left:0; right:0; padding:5px; font-family:'Subway Ticker Grid', sans-serif;}
-.home {position:relative; overflow:auto; display:none; height:100%; width:100%; background:rgba(0,0,0,.5); text-align:center; border-radius:5px; padding:10px;}
+.home {position:relative; overflow:auto; display:block; height:100% !important; width:100% !important; background:rgba(0,0,0,.5); text-align:center; border-radius:5px; padding:10px; cursor:pointer;}
 .about {position:relative; overflow:auto; display:none; height:100%; width:100%; background:rgba(0,0,0,.5); text-align:justify; border-radius:5px; padding:10px; font-size:13px;}
 .team, .donate {position:relative; overflow:auto; display:none; height:100%; width:100%; background:rgba(0,0,0,.5); text-align:center; border-radius:5px; padding:10px;}
 img.nylc {border-radius:10px; max-width:200px; float:left;}
@@ -52,7 +52,7 @@ img.nylc {border-radius:10px; max-width:200px; float:left;}
 .masthead-nav > li > a:hover::after {content:attr(title);}
 .mastfoot > .inner > a:hover {font-size:20px;}
 .splash {position:fixed; background:url(http://theuiguru.github.io/nylc2015/assets/subway_doors.jpg) no-repeat fixed top center; background-size:cover; width:100%; height:100%; color:#fff; -webkit-animation:bounceInRight 1.5s;}
-  .site-wrapper {margin:0; padding:0; width:100%; height:100%; opacity:0; position:absolute; left:0; right:0; color:#fff; background:url(http://theuiguru.github.io/nylc2015/assets/subway_nylc.jpg) no-repeat center fixed; background-size:cover; cursor:pointer;}
+  .site-wrapper {margin:0; padding:0; width:100%; height:100%; opacity:0; position:absolute; left:0; right:0; color:#fff; background:url(http://theuiguru.github.io/nylc2015/assets/subway_nylc.jpg) no-repeat center fixed; background-size:cover;}
 /* Smartphones (portrait) */ @media only screen and (max-width : 768px) {
   .masthead-nav > li > .n, .y, .l, .c {display:none !important;}
   .masthead-nav > li > .fb:hover {color:#3b5998;}
@@ -122,7 +122,7 @@ img.nylc {border-radius:10px; max-width:200px; float:left;}
 <script src="http://getbootstrap.com//assets/js/docs.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug --><script src="http://getbootstrap.com//assets/js/ie10-viewport-bug-workaround.js"></script><script type="text/javascript">
 jQuery(".site-wrapper").delay(200).animate({opacity: 1}, 4000);
-jQuery('.site-wrapper').on('click', function() {
+jQuery('.home').on('click', function() {
     jQuery(this).html('<iframe src="http://www.youtube.com/embed/lODX8m1tndg?rel=0&autoplay=1&controls=0&showinfo=0&autohide=1" width="100%" height="100%" frameborder="0" allowfullscreen="true">').css('background', 'none');
 });
 function show_div(div_id) {
