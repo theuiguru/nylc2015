@@ -17,7 +17,8 @@ function validate() {
   event.preventDefault();
   var pay=document.pay.os0.value,
   warn = document.querySelector(".msg"),
-  email = document.querySelector(".email").value;
+  email = document.querySelector(".email").value, 
+  re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([\w\W\-0-9]+\.)+[\w\W]{2,}))$/;
   if(email === "") {
   		//alert("You need to enter a 'valid' cuz.");
   		warn.innerHTML = "Invalid. You need to enter the exact email address as you did in the registration form.";
