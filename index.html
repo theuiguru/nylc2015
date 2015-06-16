@@ -28,7 +28,7 @@ h2::before {content:'NY'; display:inline-block; width:55px; height:55px; backgro
 footer {background:#2a3a53; color:#e9e9e9; font-size:16px; font-weight:300; padding:10px; text-align:center;}
 footer > a:hover {color:#cc3333; text-decoration:none;}
 .heart {color:#ff6666;}
-.play {position:relative; opacity:0; text-align:center; height:60px; background:url(http://www.google.com/cast/about/static/images/audio/youtube-buttons.png) no-repeat top; cursor:pointer;}
+.play {position:relative; opacity:0; text-align:center; height:60px; background:url(http://www.google.com/cast/about/static/images/audio/youtube-buttons.png) no-repeat top; cursor:pointer; display:none;}
 .play:hover {text-align:center; height:60px; background:url(http://www.google.com/cast/about/static/images/audio/youtube-buttons.png) no-repeat bottom; cursor:pointer;}
 .about > img {max-width:50%; border-radius:100px; float:left;}
 .btn-lg {padding:25px; height:80px; width:350px; margin:10px;}
@@ -54,7 +54,7 @@ footer > a:hover {color:#cc3333; text-decoration:none;}
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script type="text/javascript">
   $(".subway-car").delay(200).animate({opacity: 1}, 4000); //Subway car image dissolved from doors.
-  $(".play").delay(200).animate({opacity: 1}, 6000); //"Learn more" link to scroll down.
+  //$(".play").delay(200).animate({opacity: 1}, 6000); //"Learn more" link to scroll down.
   jQuery('.play').on('click', function() {
     jQuery('.video').html('<div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" src="http://www.youtube.com/embed/?listType=user_uploads&list=nylc2015&rel=0&autoplay=1&controls=1&showinfo=1&autohide=1" width="600" height="400" frameborder="0" allowfullscreen="true"></div>');
 });
