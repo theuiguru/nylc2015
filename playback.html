@@ -1,0 +1,23 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>#NYLC2015 Video Playback Intro</title><style type="text/css">
+html, body {margin:0; padding:0;}
+#video {
+    display: block;
+  position:absolute;
+    width: 100%;
+    height: 100%;
+    background: url(http://theuiguru.github.io/nylc2015/assets/subway_nylc.jpg) no-repeat top fixed;
+  background-size:cover;
+  cursor:pointer;
+}
+</style></head><body><!--<div style="position: fixed; z-index: -99; width: 100%; height: 100%">
+  <iframe frameborder="0" height="100%" width="100%" 
+    src="https://youtube.com/embed/lODX8m1tndg?autoplay=0&controls=0&showinfo=0&autohide=1">
+  </iframe>
+</div>-->
+<div id="video" class="play-button"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript">
+$('#video').on('click', function() {
+    $(this).html('<iframe src="http://www.youtube.com/embed/lODX8m1tndg?rel=0&autoplay=1&controls=0&showinfo=0&autohide=1" width="100%" height="100%" frameborder="0" allowfullscreen="true">').css('background', 'none');
+});
+</script></body></html>
